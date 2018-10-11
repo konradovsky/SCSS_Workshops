@@ -47,7 +47,7 @@ table {
 }
 
 /* 
-   v2.0 | Fonts
+   v2.0 | Circular font
 */
 
 
@@ -81,6 +81,18 @@ table {
 
 
 /* 
+   v2.0 | K2D font
+*/
+
+/* Extra-Black */
+@font-face {
+    font-family: "K2D";
+    src: url("../fonts/K2D-ExtraBold.ttf") format("truetype");
+    font-weight: 900;
+}
+
+
+/* 
    v2.0 | Main styles
 */
 body {
@@ -103,7 +115,7 @@ header {
 }
 
 #logo {
-    height: 60px;
+    width: 180px;
     padding-left: 30px;
 }
 
@@ -141,3 +153,83 @@ header {
    v2.0 | Body
 */
 
+article {
+    width: 35%;
+    float: left;
+    height: 75vh;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+article h1{
+    padding: 40px;
+    font-size: 66px;
+    font-weight: 600;
+    width: auto;
+    margin-left: 100px;
+}
+article span {
+    display: block;
+}
+article h1 span:last-child {
+    font-family: 'K2D';
+    font-weight: 900;
+    font-size: 199px;
+    transform: translateX(205px);
+    color: rgba(231, 5, 5, 0.938);
+    z-index: 999999;
+    position: relative;
+    
+}
+
+.main-img-holder{
+    height: 75vh;
+    width: 65%;
+    float: left;
+    background-image: url('../img/main.jpeg');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.slider-arrows{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.slider-arrows i{
+    padding: 70px;
+    color:white;
+    background-color: rgba(255, 255, 255, 0.473);
+    font-size: 20px;
+}
+
+.slider-arrows i:first-child{
+    background:rgba(231, 5, 5, 0.938);
+}
+.slider-arrows i:last-child{
+    background:rgba(255, 6, 6, 0.274);
+    transform: translateX(-3px);
+}
+
+.info-holder{
+    width:60%;
+    margin: 30px auto;
+    background: red;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-holder p {
+    padding-right: 15px;
+}
+
+.number-indicator{
+    padding: 40px;
+}
