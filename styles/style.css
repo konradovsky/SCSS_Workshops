@@ -95,6 +95,10 @@ table {
 /* 
    v2.0 | Main styles
 */
+html {
+    font-size: 10px;
+}
+
 body {
     font-family: Circular !important;
 }
@@ -104,9 +108,9 @@ body {
    v2.0 | Header
 */
 header {
-    height: 100px;
+    height: 10rem;
     background: white;
-    border-bottom: 1px solid #f5f5f5;
+    border-bottom: .1rem solid #f5f5f5;
     width: 100%;
 
     display: flex;
@@ -115,8 +119,8 @@ header {
 }
 
 #logo {
-    width: 180px;
-    padding-left: 30px;
+    width: 18rem;
+    padding-left: 3rem;
 }
 
 .nav-holder{
@@ -126,12 +130,12 @@ header {
 }
 
 .menu {
-    margin-right: 30px;
+    margin-right: 3rem;
 }
 
 .menu li {
     float: left;
-    margin-right: 50px;
+    margin-right: 5rem;
 }
 
 .menu a {
@@ -140,8 +144,8 @@ header {
 }
 
 .icons{
-    height: 100px;
-    width: 200px;
+    height: 10rem;
+    width: 20rem;
     background:#f5f5f5;
 
     display: flex;
@@ -164,11 +168,11 @@ article {
 }
 
 article h1{
-    padding: 40px;
-    font-size: 66px;
+    padding: 4rem;
+    font-size: 6.6rem;
     font-weight: 600;
     width: auto;
-    margin-left: 100px;
+    margin-left: 10rem;
 }
 article span {
     display: block;
@@ -176,8 +180,8 @@ article span {
 article h1 span:last-child {
     font-family: 'K2D';
     font-weight: 900;
-    font-size: 199px;
-    transform: translateX(205px);
+    font-size: 19.9rem;
+    transform: translateX(20.5rem);
     color: rgba(231, 5, 5, 0.938);
     z-index: 999999;
     position: relative;
@@ -201,10 +205,10 @@ article h1 span:last-child {
 }
 
 .slider-arrows i{
-    padding: 70px;
+    padding: 5.5rem;
     color:white;
     background-color: rgba(255, 255, 255, 0.473);
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .slider-arrows i:first-child{
@@ -212,12 +216,12 @@ article h1 span:last-child {
 }
 .slider-arrows i:last-child{
     background:rgba(255, 6, 6, 0.274);
-    transform: translateX(-3px);
+    transform: translateX(-.3rem);
 }
 
 .info-holder{
     width:60%;
-    margin: 30px auto;
+    margin: 3rem auto;
     background: red;
 
     display: flex;
@@ -227,9 +231,15 @@ article h1 span:last-child {
 }
 
 .info-holder p {
-    padding: 15px;
+    padding: 1.5rem;
+    font-size: 1.4rem;
 }
 
 .number-indicator{
-    padding: 40px;
+    padding: 4rem;
+}
+
+
+.number-indicator span{
+    font-size: 2rem;
 }
