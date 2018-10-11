@@ -97,8 +97,20 @@ table {
 */
 html {
     font-size: 10px;
+    transition: .5s;
 }
-
+ 
+@media (max-width: 1000px){
+    html{
+        font-size: 8px;
+    }
+}
+ 
+@media (min-width: 1200px){
+    html{
+        font-size: 13px;
+    }
+}
 body {
     font-family: Circular !important;
 }
@@ -156,9 +168,14 @@ header {
 /* 
    v2.0 | Body
 */
-
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+}
 article {
     width: 35%;
+    min-width: 300px;
     float: left;
     height: 75vh;
 
@@ -173,6 +190,8 @@ article h1{
     font-weight: 600;
     width: auto;
     margin-left: 10rem;
+    position: relative;
+    z-index: 99;
 }
 article span {
     display: block;
@@ -242,4 +261,26 @@ article h1 span:last-child {
 
 .number-indicator span{
     font-size: 2rem;
+}
+
+
+@media (max-width: 876px){
+    .main-img-holder{
+        width: 100%;
+    }
+    .menu {
+        display: none;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    article h1 {
+        margin: 0;
+    }
+
+    article h1 span:last-child{
+        transform: translateX(0px);
+    }
 }
