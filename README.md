@@ -7,4 +7,5 @@
 - Organizacja, Metodyki (Atomic, BEM).
 
 2. Preprocesory: SASS/SCSS.
-3. Architektura i Organizacja: 7-1.
+3. Organizacja, Metodyki: BEM.
+4. Architektura i Organizacja: 7-1.
