@@ -8,7 +8,7 @@
     <title>Scss Workshops</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -19,19 +19,19 @@
 
 <body>
 
-    <header>
-        <img src="img/logo.png" id="logo">
+    <header class="head">
+        <img class="head__logo" src="img/logo.png" id="logo">
 
-        <div class="nav-holder">
-            <nav class="menu">
+        <div class="head__menu">
+            <nav class="menu menu-main">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
                 </ul>
             </nav>
 
-            <div class="icons">
+            <div class="menu menu--icon">
                 <i class="fas fa-search"></i>
                 <i class="fas fa-bars"></i>
             </div>
@@ -39,19 +39,21 @@
 
     </header>
 
-    <section>
+    <section class="page">
         <article>
             <h1>
-                <span>PORSCHE <br> 911</span>
+                <span>PORSCHE<br>911</span>
                 <span>GT2</span>
             </h1>
             <div class="info-holder">
                 <div class="number-indicator">
                     <span>2</span>
                 </div>
-                <p>3.8-liter six-cylinder twin-turbo engine producing 700 hp, 553 lb-ft of torque and a top track speed of 211 mph.</p>
+                <p>3.8-liter six-cylinder twin-turbo engine producing 700 hp, 553 lb-ft of torque and a top track speed
+                    of 211 mph.</p>
             </div>
         </article>
+
         <div class="main-img-holder">
             <div class="slider-arrows">
                 <i class="fas fa-arrow-left"></i>
@@ -60,8 +62,6 @@
         </div>
 
     </section>
-
-
 </body>
 
 </html>

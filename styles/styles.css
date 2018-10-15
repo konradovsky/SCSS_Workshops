@@ -192,7 +192,7 @@ body {
 /* 
    v2.0 | Header
 */
-header {
+.head {
   height: 10rem;
   background: #ffffff;
   border-bottom: 0.1rem solid #f5f5f5;
@@ -201,38 +201,33 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-
-#logo {
-  width: 18rem;
-  padding-left: 3rem; }
-
-.nav-holder {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  .head__logo {
+    width: 18rem;
+    padding-left: 3rem; }
+  .head__menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
 
 .menu {
   margin-right: 3rem; }
-
-.menu li {
-  float: left;
-  margin-right: 5rem; }
-
-.menu a {
-  text-decoration: none;
-  color: #333333;
-  font-size: 1.3rem; }
-
-.icons {
-  height: 10rem;
-  width: 20rem;
-  background: #f5f5f5;
-  font-size: 1.3rem;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
+  .menu__item {
+    float: left;
+    margin-right: 5rem; }
+  .menu__link {
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.3rem; }
+  .menu--icon {
+    height: 10rem;
+    width: 20rem;
+    background: #f5f5f5;
+    font-size: 1.3rem;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
 
 /* 
    v2.0 | Body
