@@ -9,5 +9,5 @@ gulp.task("sass", () => {
 });
 
 gulp.task("default", () => {
-  gulp.watch("./styles/scss/styles.scss", ["sass"]);
+  gulp.watch("./styles/scss/*.scss", ["sass"]);
 });
