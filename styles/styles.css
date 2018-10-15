@@ -1,3 +1,26 @@
+/*
+--------
+
+0 - 600px       Phone
+600 - 900px     Tablet portrait
+900 - 1200px    Tablet landscape
+[1200 - 1800]   Normal styles
+1800px +        Big desktop
+
+---------
+
+breakponit arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+---------
+
+1em = 16px
+
+---------
+*/
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
