@@ -1,0 +1,23 @@
+{
+  "name": "scsswork",
+  "version": "1.0.0",
+  "description": "Workshops",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "node ./node_modules/gulp/bin/gulp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konradovsky/SCSS_Workshops.git"
+  },
+  "author": "kb & ll",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konradovsky/SCSS_Workshops/issues"
+  },
+  "homepage": "https://github.com/konradovsky/SCSS_Workshops#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
