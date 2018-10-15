@@ -47,6 +47,7 @@ html {
     font-size: 8px;
   }
 }
+
 body {
   font-family: $font_face;
 }
@@ -54,45 +55,45 @@ body {
 /* 
    v2.0 | Header
 */
-header {
+.head {
   height: 10rem;
   background: $white;
   border-bottom: 0.1rem solid $grey_light;
   width: 100%;
 
   @include flex(row, space-between, center);
-}
 
-#logo {
-  width: 18rem;
-  padding-left: 3rem;
-}
+  &__logo {
+    width: 18rem;
+    padding-left: 3rem;
+  }
 
-.nav-holder {
-  @include flex(row, space-between, center);
+  &__menu {
+    @include flex(row, space-between, center);
+  }
 }
 
 .menu {
   margin-right: 3rem;
-}
 
-.menu li {
-  float: left;
-  margin-right: 5rem;
-}
+  &__item {
+    float: left;
+    margin-right: 5rem;
+  }
 
-.menu a {
-  text-decoration: none;
-  color: $dark;
-  font-size: 1.3rem;
-}
+  &__link {
+    text-decoration: none;
+    color: $dark;
+    font-size: 1.3rem;
+  }
 
-.icons {
-  height: 10rem;
-  width: 20rem;
-  background: $grey_light;
-  font-size: 1.3rem;
-  @include flex(row, space-around, center);
+  &--icon {
+    height: 10rem;
+    width: 20rem;
+    background: $grey_light;
+    font-size: 1.3rem;
+    @include flex(row, space-around, center);
+  }
 }
 
 /* 
