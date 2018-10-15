@@ -74,8 +74,6 @@ body {
 }
 
 .menu {
-  margin-right: 3rem;
-
   &__item {
     float: left;
     margin-right: 5rem;
@@ -88,6 +86,7 @@ body {
   }
 
   &--icon {
+    margin-left: 1.5rem;
     height: 10rem;
     width: 20rem;
     background: $grey_light;
@@ -96,114 +95,127 @@ body {
   }
 }
 
-/* 
-   v2.0 | Body
-*/
-section {
+.page {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap-reverse;
-}
-article {
-  width: 35%;
-  min-width: 300px;
-  float: left;
-  height: 75vh;
 
-  @include flex(column, center, center);
-}
+  &__article {
+    width: 35%;
+    min-width: 300px;
+    height: 75vh;
 
-article h1 {
-  padding: 4rem;
-  font-size: 6.6rem;
-  font-weight: 600;
-  width: auto;
-  margin-left: 3rem;
-  position: relative;
-  z-index: 99;
-}
-article span {
-  display: block;
-}
-article h1 span:last-child {
-  font-family: "K2D";
-  font-weight: 900;
-  font-size: 19.9rem;
-  transform: translateX(20.5rem);
-  color: rgba($red, 0.938);
-  z-index: 999999;
-  position: relative;
+    @include flex(column, center, center);
+  }
+
+  &__slider {
+    width: 65%;
+    height: 75vh;
+    background-image: url("../img/main.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
 }
 
-.main-img-holder {
-  height: 75vh;
-  width: 65%;
-  float: left;
-  background-image: url("../img/main.jpeg");
-  background-position: center;
-  background-size: cover;
-  position: relative;
+.article {
+  &__logo {
+    padding: 4rem;
+    font-size: 6.6rem;
+    font-weight: 600;
+    width: auto;
+    margin-left: 3rem;
+    position: relative;
+    z-index: 99;
+  }
+
+  &__description {
+    width: 60%;
+    margin: 3rem auto;
+    background: $red;
+
+    @include flex(row, center, center);
+  }
 }
 
-.slider-arrows {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+.logo {
+  &__text {
+    display: block;
+
+    &--lg {
+      font-family: "K2D";
+      font-weight: 900;
+      font-size: 19.9rem;
+      transform: translateX(20.5rem);
+      color: rgba($red, 0.938);
+      z-index: 999999;
+      position: relative;
+    }
+  }
 }
 
-.slider-arrows i {
-  padding: 5.5rem;
-  color: white;
-  background-color: rgba($grey_light, 0.473);
-  font-size: 2rem;
+.description {
+  &__number {
+    padding: 4rem;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  &__text {
+    padding: 1.5rem;
+    font-size: 1.4rem;
+  }
 }
 
-.slider-arrows i:first-child {
-  background: rgba($red, 0.938);
-}
-.slider-arrows i:last-child {
-  background: rgba($red, 0.274);
-  transform: translateX(-0.3rem);
-}
+.slider {
+  &__arrows {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 
-.info-holder {
-  width: 60%;
-  margin: 3rem auto;
-  background: $red;
+  &__item {
+    padding: 5.5rem;
+    color: white;
+    cursor: pointer;
+    background-color: rgba($grey_light, 0.473);
+    font-size: 2rem;
 
-  @include flex(row, center, center);
-}
+    &:first-child {
+      background: rgba($red, 0.938);
+    }
 
-.info-holder p {
-  padding: 1.5rem;
-  font-size: 1.4rem;
-}
-
-.number-indicator {
-  padding: 4rem;
-}
-
-.number-indicator span {
-  font-size: 2rem;
+    &:last-child {
+      background: rgba($red, 0.274);
+      transform: translateX(-0.3rem);
+    }
+  }
 }
 
 @media (max-width: 876px) {
-  .main-img-holder {
-    width: 100%;
+  .page {
+    flex-direction: column-reverse;
   }
+
+  .page__slider {
+    width: 100%;
+    height: 50vh;
+  }
+
   .menu {
     display: none;
   }
 
-  article {
+  .page__article {
     width: 100%;
   }
 
-  article h1 {
+  .logo {
     margin: 0;
-  }
 
-  article h1 span:last-child {
-    transform: translateX(0px);
+    &__text:last-child {
+      transform: translateX(0px);
+    }
   }
 }

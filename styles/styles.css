@@ -210,44 +210,46 @@ body {
     flex-direction: row;
     justify-content: space-between; }
 
-.menu {
-  margin-right: 3rem; }
-  .menu__item {
-    float: left;
-    margin-right: 5rem; }
-  .menu__link {
-    text-decoration: none;
-    color: #333333;
-    font-size: 1.3rem; }
-  .menu--icon {
-    height: 10rem;
-    width: 20rem;
-    background: #f5f5f5;
-    font-size: 1.3rem;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
-
-/* 
-   v2.0 | Body
-*/
-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse; }
-
-article {
-  width: 35%;
-  min-width: 300px;
+.menu__item {
   float: left;
-  height: 75vh;
+  margin-right: 5rem; }
+
+.menu__link {
+  text-decoration: none;
+  color: #333333;
+  font-size: 1.3rem; }
+
+.menu--icon {
+  margin-left: 1.5rem;
+  height: 10rem;
+  width: 20rem;
+  background: #f5f5f5;
+  font-size: 1.3rem;
   align-items: center;
   display: flex;
-  flex-direction: column;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: space-around; }
 
-article h1 {
+.page {
+  display: flex;
+  flex-direction: row; }
+  .page__article {
+    width: 35%;
+    min-width: 300px;
+    height: 75vh;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .page__slider {
+    width: 65%;
+    height: 75vh;
+    background-image: url("../img/main.jpeg");
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+
+.article__logo {
   padding: 4rem;
   font-size: 6.6rem;
   font-weight: 600;
@@ -256,46 +258,7 @@ article h1 {
   position: relative;
   z-index: 99; }
 
-article span {
-  display: block; }
-
-article h1 span:last-child {
-  font-family: "K2D";
-  font-weight: 900;
-  font-size: 19.9rem;
-  transform: translateX(20.5rem);
-  color: rgba(255, 0, 0, 0.938);
-  z-index: 999999;
-  position: relative; }
-
-.main-img-holder {
-  height: 75vh;
-  width: 65%;
-  float: left;
-  background-image: url("../img/main.jpeg");
-  background-position: center;
-  background-size: cover;
-  position: relative; }
-
-.slider-arrows {
-  position: absolute;
-  bottom: 0;
-  left: 0; }
-
-.slider-arrows i {
-  padding: 5.5rem;
-  color: white;
-  background-color: rgba(245, 245, 245, 0.473);
-  font-size: 2rem; }
-
-.slider-arrows i:first-child {
-  background: rgba(255, 0, 0, 0.938); }
-
-.slider-arrows i:last-child {
-  background: rgba(255, 0, 0, 0.274);
-  transform: translateX(-0.3rem); }
-
-.info-holder {
+.article__description {
   width: 60%;
   margin: 3rem auto;
   background: #ff0000;
@@ -304,24 +267,54 @@ article h1 span:last-child {
   flex-direction: row;
   justify-content: center; }
 
-.info-holder p {
+.logo__text {
+  display: block; }
+  .logo__text--lg {
+    font-family: "K2D";
+    font-weight: 900;
+    font-size: 19.9rem;
+    transform: translateX(20.5rem);
+    color: rgba(255, 0, 0, 0.938);
+    z-index: 999999;
+    position: relative; }
+
+.description__number {
+  padding: 4rem; }
+  .description__number span {
+    font-size: 2rem; }
+
+.description__text {
   padding: 1.5rem;
   font-size: 1.4rem; }
 
-.number-indicator {
-  padding: 4rem; }
+.slider__arrows {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
 
-.number-indicator span {
+.slider__item {
+  padding: 5.5rem;
+  color: white;
+  cursor: pointer;
+  background-color: rgba(245, 245, 245, 0.473);
   font-size: 2rem; }
+  .slider__item:first-child {
+    background: rgba(255, 0, 0, 0.938); }
+  .slider__item:last-child {
+    background: rgba(255, 0, 0, 0.274);
+    transform: translateX(-0.3rem); }
 
 @media (max-width: 876px) {
-  .main-img-holder {
-    width: 100%; }
+  .page {
+    flex-direction: column-reverse; }
+  .page__slider {
+    width: 100%;
+    height: 50vh; }
   .menu {
     display: none; }
-  article {
+  .page__article {
     width: 100%; }
-  article h1 {
+  .logo {
     margin: 0; }
-  article h1 span:last-child {
-    transform: translateX(0px); } }
+    .logo__text:last-child {
+      transform: translateX(0px); } }
