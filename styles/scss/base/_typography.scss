@@ -1,0 +1,41 @@
+/**
+ * Basic typography style for copy text
+
+/* Light */
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 100;
+}
+
+/* Light */
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 300;
+}
+
+/*  Bold */
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 500;
+}
+
+/* Black */
+@font-face {
+  font-family: "Circular";
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 600;
+}
+
+/* 
+   v2.0 | K2D font
+*/
+
+/* Extra-Black */
+@font-face {
+  font-family: "K2D";
+  src: url("../fonts/K2D-ExtraBold.ttf") format("truetype");
+  font-weight: 900;
+}
