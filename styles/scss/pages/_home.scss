@@ -12,6 +12,15 @@
       height: 75vh;
   
       @include flex(column, center, center);
+
+      @include respond(tab-port){
+        height: 45vh;
+        width: 100%;
+      }
+
+      @include respond(phone){
+        background: $red;
+      }
     }
   
     &__slider {
@@ -21,7 +30,17 @@
       background-position: center;
       background-size: cover;
       position: relative;
+
+      @include respond(tab-port){
+        width: 100%;
+        height: 50vh;
+      }
     }
+
+    @include respond(tab-port){
+      flex-direction: column-reverse;
+    }
+
   }
   
   .article {
@@ -49,14 +68,34 @@
       display: block;
   
       &--lg {
+        transition: 0.3s;
         font-family: "K2D";
         font-weight: 900;
-        font-size: 14.9rem;
+        font-size: 19.9rem;
         color: rgba($red, 0.938);
         z-index: 999999;
         position: relative;
         left: 40%;
+
+        @include respond(tab-port){
+          left: 0%;
+        }
+
+        @include respond(phone){
+          color: $white;
+        }
       }
+
+
+    }
+    &__text:last-child {
+      @include respond(tab-port){
+        transform: translateX(0px);
+      }
+    }
+
+    @include respond(tab-port){
+      margin: 0;
     }
   }
   
@@ -80,6 +119,10 @@
       position: absolute;
       bottom: 0;
       left: 0;
+
+      @include respond(phone){
+        right: 0;
+      }
     }
   
     &__item {
@@ -97,33 +140,13 @@
         background: rgba($red, 0.274);
         transform: translateX(-0.3rem);
       }
-    }
-  }
-  
-  @media (max-width: 876px) {
-    .page {
-      flex-direction: column-reverse;
-    }
-  
-    .page__slider {
-      width: 100%;
-      height: 50vh;
-    }
-  
-    .menu {
-      display: none;
-    }
-  
-    .page__article {
-      width: 100%;
-    }
-  
-    .logo {
-      margin: 0;
-  
-      &__text:last-child {
-        transform: translateX(0px);
+
+      @include respond(phone){
+        padding: 5.5rem 0;
+        width: 50%;
+        float: left;
+
+        text-align: center;
       }
     }
   }
-  
