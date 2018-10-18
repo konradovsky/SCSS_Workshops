@@ -1,5 +1,22 @@
 html {
-  font-size: 10px;
+  font-size: 62.5%;  // 1rem = 10px; 10px/16px = 62.5%
   transition: 0.5s;
   font-family: $font_face;
+
+
+  @include respond(big-desktop) {//  x > 1800px
+    font-size: 87.5%;   // 1rem = 14px; 14px/16px = 87.5%
+  }
+  @include respond(tab-land) { // x < 1200px
+    font-size: 56.25%;   // 1rem = 9px; 9px/16px = 56.25%
+  }
+  @include respond(tab-port) { // x < 900px
+    font-size: 50%;   // 1rem = 8px; 8px/16px = 50%
+  }
+  @include respond(phone) {  // x < 600px
+    font-size: 43.75%;   // 1rem = 7px; 7px/16px = 43.75%
+  }
+
+  
 }
+
